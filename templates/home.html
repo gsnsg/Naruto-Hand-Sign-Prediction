@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Detect Naruto Hand Signs</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div class="jumbotron text-center">
+      <h1>Naruto Hand Sign Detector</h1>
+      <p>Developed by Nikhit</p>
+    </div>
+
+    <center>
+      <form action="/success" , method="post" , enctype="multipart/form-data">
+        <table>
+          <tr>
+            <h2>Please Upload an Image to Continue</h2>
+          </tr>
+
+          <tr>
+            <td style="padding-right: 10px;">
+              <input class="btn btn-default" type="file" name="photo" />
+            </td>
+            <td>
+              <input class="btn btn-primary" type="submit" value="Upload" />
+            </td>
+          </tr>
+        </table>
+      </form>
+      <br /><br />
+
+      <table>
+        <tr>
+          <td><b>About:</b></td>
+          <td>
+            <p>
+              Used CNN to predict naruto hand sign. The dataset can be found
+              <a
+                href="https://www.kaggle.com/vikranthkanumuru/naruto-hand-sign-dataset"
+                >here</a
+              >. <br />
+              I used all the images from train and test set and shuffled them
+              before splitting them into respective sets. I used a test split of
+              0.2 and an validation split of 0.2 and batch size = 32 for 20
+              epochs.
+              <br />
+              The validation accuracy at the end of training was <b>~95%</b> and
+              the test accuracy was <b>~96%</b>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td><b>Model Architecture:</b></td>
+          <td><img src="static/images/model_summary.png" , height="50%" /></td>
+        </tr>
+        <tr>
+          <td><b>Loss Plots:</b></td>
+          <td><img src="static/images/losses.png" /></td>
+        </tr>
+        <tr>
+          <td><b>Accuracy Plots:</b></td>
+          <td><img src="static/images/accuracies.png" /></td>
+        </tr>
+
+        <tr>
+          <td><b>Github Repo Link:</b></td>
+          <td>
+            <a href="https://github.com/sainikhit2k/Naruto-Hand-Sign-Prediction"
+              >Link to the repo</a
+            >
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>

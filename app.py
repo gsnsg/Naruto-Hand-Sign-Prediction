@@ -35,15 +35,15 @@ def display():
             image.save(os.path.join(
                 UPLOAD_FOLDER, "display.png"))
             img = cv2.imread(UPLOAD_FOLDER + "display.png")
-            img = cv2.resize(img, (300, 300), cv2.INTER_AREA)
+            img = cv2.resize(img, (300, 300))
             img = np.expand_dims(img, axis=0)
             pred = model.predict(img)
             pred = np.argmax(pred, axis=1)[0]
-
         return render_template("success.html", prediction=classes[pred - 1])
 
     return render_template("home.html")
 
 
 if __name__ == '__main__':
+    app.debug = True
     app.run()

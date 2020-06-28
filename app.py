@@ -8,7 +8,7 @@ import cv2
 app = Flask(__name__)
 model = load_model('best_model_96_test.h5')
 
-UPLOAD_FOLDER = '/Users/sai/Desktop/python/DS/app/static/images/'
+UPLOAD_FOLDER = './static/images/'
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
 classes = {0: 'bird', 1: 'boar', 2: 'dog', 3: 'dragon', 4: 'hare', 5: 'horse',
            6: 'monkey', 7: 'ox', 8: 'ram', 9: 'rat', 10: 'snake', 11: 'tiger', 12: 'zero'}

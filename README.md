@@ -17,3 +17,14 @@ set. Achieved validation accuracy of 0.95 and test accuracy of 0.96
 
 
 Download model from [here](https://drive.google.com/file/d/1qqG3WKFhdT4wVX7q7nOQE77AIeyZ36Db/view?usp=sharing)
+
+
+# Instructions to Load the Model
+To load model type the following code
+```
+import pickle
+
+#filename - path to the model
+loaded_model = pickle.load(open(filename, 'rb'))
+
+```

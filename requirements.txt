@@ -3,4 +3,5 @@ Flask==1.1.2
 Keras==2.4.2
 gunicorn==19.9.0
 tensorflow-cpu==2.2.0
-
+opencv-python==4.2.0.34
+scipy==1.4.1

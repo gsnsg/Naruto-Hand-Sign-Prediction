@@ -1,7 +1,7 @@
 # Naruto-Hand-Sign-Prediction using CNN
 
 A custom CNN to classify Naruto Hand Signs. The data set contains roughly around 2100 images and I used a test split of 0.2 and validation split of 0.2 in the train
-set.
+set. Achieved validation accuracy of 0.95 and test accuracy of 0.96
 
 <b>Dataset: </b>
 [Kaggle Link](https://www.kaggle.com/vikranthkanumuru/naruto-hand-sign-dataset)

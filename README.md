@@ -28,3 +28,8 @@ import pickle
 loaded_model = pickle.load(open(filename, 'rb'))
 
 ```
+
+
+<h2>Note</h2>
+
+The html design of the current app is taken from this [repo](https://github.com/shlokshah/Traffic-Sign-Detection).
